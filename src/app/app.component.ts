@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'Evaluación angular';
 
   menu = [
+    { link: '/', text: 'Inicio' },
     { link: '/login', text: 'Login' },
     { link: '/bootstrap', text: 'Libros responsivos' },
     { link: '/highcharts', text: 'Highcharts' },

@@ -1,15 +1,3 @@
-<!-- <div class="card">
-  <img [src]="book.image" class="card-img-top" alt="Portada del libro">
-  <div class="card-body">
-    <h5 class="card-title">{{ book.title }}</h5>
-    <p class="card-text">{{ book.description }}</p>
-    <p class="card-text">Author: {{ book.author }}</p>
-    <p class="card-text">Editorial: {{ book.editorial }}</p>
-    <p class="card-text">Fecha de Emisión: {{ book.date }}</p>
-    <p class="card-text">Precio: {{ book.precio }}</p>
-  </div>
-</div> -->
-
 <div class="card mb-4">
   <div class="card-body p-4">
 
@@ -48,7 +36,7 @@
         <div>
           <p class="small text-muted mb-1">Precio</p>
           <strong class="mb-2" [ngClass]="{ 'text-primary': book.precio < 10 }">{{ book.precio | currency:'MXN':'symbol':'1.2-2' }}</strong>
-          <span class="badge badge-primary" *ngIf="book.precio <= disccountPrice">¡Tiene descuento!</span>
+          <span class="badge badge-primary" *ngIf="book.precio <= disccountPrice">!Oferta!</span>
         </div>
       </div>
     </div>

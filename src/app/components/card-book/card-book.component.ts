@@ -17,6 +17,7 @@ export class CardBookComponent {
     date: '',
     precio: 0,
   };
+
   disccountPrice = 10;
 
 }

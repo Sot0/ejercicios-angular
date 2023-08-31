@@ -2,8 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HighchartsRoutingModule } from './highcharts-routing.module';
 import { GraficaComponent } from './grafica/grafica.component';
-
-
+import { HighchartsChartModule } from 'highcharts-angular';
 
 @NgModule({
   declarations: [
@@ -11,7 +10,8 @@ import { GraficaComponent } from './grafica/grafica.component';
   ],
   imports: [
     CommonModule,
-    HighchartsRoutingModule
+    HighchartsRoutingModule,
+    HighchartsChartModule,
   ]
 })
 export class HighchartsModule { }
