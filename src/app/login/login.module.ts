@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { ComponentsModule } from '../components/components.module';
 import { LoginRoutingModule } from './login-routing.module';
@@ -28,7 +29,7 @@ import { VistaCuatroComponent } from './bienvenida/opciones/opcion-uno/vista-cua
     VistaUnoComponent,
     VistaDosComponent,
     VistaTresComponent,
-    VistaCuatroComponent
+    VistaCuatroComponent,
   ],
   imports: [
     CommonModule,
@@ -36,6 +37,7 @@ import { VistaCuatroComponent } from './bienvenida/opciones/opcion-uno/vista-cua
     LoginRoutingModule,
     FormsModule,
     ComponentsModule,
+    ReactiveFormsModule
   ]
 })
 export class LoginModule { }
