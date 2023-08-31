@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { BootstrapRoutingModule } from './bootstrap-routing.module';
 import { VistaResponsivaComponent } from './vista-responsiva/vista-responsiva.component';
 import { ComponentsModule } from '../components/components.module';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 
 
@@ -14,6 +15,8 @@ import { ComponentsModule } from '../components/components.module';
     CommonModule,
     BootstrapRoutingModule,
     ComponentsModule,
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class BootstrapModule { }

@@ -9,4 +9,13 @@ import { staticBooks } from '../../lib/data/books';
 })
 export class VistaResponsivaComponent {
   books: Book[] = staticBooks;
+  filteredBooks: Book[] = this.books;
+  filterValue: string = '';
+
+  filterBooks(): void {
+    this.filteredBooks = this.books.filter(book =>
+      book.title.toLowerCase().includes(this.filterValue.toLowerCase())
+    );
+  }
+
 }
