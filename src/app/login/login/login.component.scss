@@ -1,0 +1,29 @@
+.container {
+  height: 70vh;
+  width: 100vw;
+
+  .row {
+    height: 70vh;
+  }
+
+  .card {
+    // // width: 100%;
+    // max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    .card-title {
+      margin-bottom: 20px;
+    }
+
+    form {
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      .btn-block {
+        width: 100%;
+      }
+    }
+  }
+}
